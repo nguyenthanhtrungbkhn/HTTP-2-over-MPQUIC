@@ -1,0 +1,3069 @@
+<!doctype html>
+<html 
+      lang="en"
+      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award">
+    <meta property="og:site_name" content="Google for Developers">
+    <meta property="og:type" content="website"><meta name="theme-color" content="#fff"><meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap">
+      <link rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers/css/app.css">
+      <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers/images/favicon-new.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers/images/touchicon-180-new.png"><link rel="canonical" href="https://developers.google.com/ads-data-hub"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google for Developers" href="https://developers.google.com/s/opensearch.xml">
+      <link rel="alternate" hreflang="en"
+          href="https://developers.google.com/ads-data-hub" /><link rel="alternate" hreflang="x-default" href="https://developers.google.com/ads-data-hub" /><link rel="alternate" hreflang="ar"
+          href="https://developers.google.com/ads-data-hub?hl=ar" /><link rel="alternate" hreflang="bn"
+          href="https://developers.google.com/ads-data-hub?hl=bn" /><link rel="alternate" hreflang="zh-Hans"
+          href="https://developers.google.com/ads-data-hub?hl=zh-cn" /><link rel="alternate" hreflang="zh-Hant"
+          href="https://developers.google.com/ads-data-hub?hl=zh-tw" /><link rel="alternate" hreflang="cs"
+          href="https://developers.google.com/ads-data-hub?hl=cs" /><link rel="alternate" hreflang="fa"
+          href="https://developers.google.com/ads-data-hub?hl=fa" /><link rel="alternate" hreflang="fr"
+          href="https://developers.google.com/ads-data-hub?hl=fr" /><link rel="alternate" hreflang="de"
+          href="https://developers.google.com/ads-data-hub?hl=de" /><link rel="alternate" hreflang="he"
+          href="https://developers.google.com/ads-data-hub?hl=he" /><link rel="alternate" hreflang="hi"
+          href="https://developers.google.com/ads-data-hub?hl=hi" /><link rel="alternate" hreflang="id"
+          href="https://developers.google.com/ads-data-hub?hl=id" /><link rel="alternate" hreflang="it"
+          href="https://developers.google.com/ads-data-hub?hl=it" /><link rel="alternate" hreflang="ja"
+          href="https://developers.google.com/ads-data-hub?hl=ja" /><link rel="alternate" hreflang="ko"
+          href="https://developers.google.com/ads-data-hub?hl=ko" /><link rel="alternate" hreflang="pl"
+          href="https://developers.google.com/ads-data-hub?hl=pl" /><link rel="alternate" hreflang="pt-BR"
+          href="https://developers.google.com/ads-data-hub?hl=pt-br" /><link rel="alternate" hreflang="pt"
+          href="https://developers.google.com/ads-data-hub?hl=pt" /><link rel="alternate" hreflang="ru"
+          href="https://developers.google.com/ads-data-hub?hl=ru" /><link rel="alternate" hreflang="es"
+          href="https://developers.google.com/ads-data-hub?hl=es" /><link rel="alternate" hreflang="es-419"
+          href="https://developers.google.com/ads-data-hub?hl=es-419" /><link rel="alternate" hreflang="th"
+          href="https://developers.google.com/ads-data-hub?hl=th" /><link rel="alternate" hreflang="tr"
+          href="https://developers.google.com/ads-data-hub?hl=tr" /><link rel="alternate" hreflang="vi"
+          href="https://developers.google.com/ads-data-hub?hl=vi" /><title>Ads Data Hub &nbsp;|&nbsp; Google for Developers</title>
+
+<meta property="og:title" content="Ads Data Hub &nbsp;|&nbsp; Google for Developers"><meta name="description" content="Join Google ad data with your own data while maintaining end-user privacy.
+">
+  <meta property="og:description" content="Join Google ad data with your own data while maintaining end-user privacy.
+"><meta property="og:url" content="https://developers.google.com/ads-data-hub"><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers/images/opengraph/white.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    
+    "headline": ""
+  }
+</script>
+    
+      <link rel="stylesheet" href="/extras.css"></head>
+  <body class=""
+        template="landing"
+        theme="white"
+        type="article"
+        
+        
+        
+        layout="full"
+        
+        
+        
+        concierge
+        
+        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+    <section class="devsite-wrapper">
+      
+      <devsite-cookie-notification-bar></devsite-cookie-notification-bar>
+      <devsite-header role="banner">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner nocontent">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/ads-data-hub">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="Ads Data Hub"
+           src="https://www.gstatic.com/images/branding/product/1x/ads_data_hub_24dp.png"
+           srcset=" https://www.gstatic.com/images/branding/product/1x/ads_data_hub_24dp.png"
+           sizes="64px"
+           loading="lazy">
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/ads-data-hub"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="Ads Data Hub"
+      
+    >
+    Ads Data Hub
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+  </span>
+
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+            
+           </div>
+          
+<devsite-search
+    enable-signin
+    enable-search
+    enable-suggestions
+      enable-query-completion
+    
+    
+    project-name="Ads Data Hub"
+    tenant-name="Google for Developers"
+    project-scope="/ads-data-hub"
+    url-scoped="https://developers.google.com/s/results/ads-data-hub"
+    
+    
+    
+    >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              
+              aria-label="Open search"></button>
+      <div class="devsite-searchbox">
+        <input
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          
+          aria-label="Search"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          autocomplete="off"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          
+          placeholder="Search"
+          role="combobox"
+          type="text"
+          value=""
+          >
+          <div class="devsite-search-image material-icons" aria-hidden="true">
+            
+          </div>
+      </div>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          
+          aria-label="Close search"></button>
+</devsite-search>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt"
+        >Português</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="cs"
+        >česky</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+
+        
+
+        
+          
+          
+          <devsite-user 
+                        
+                        
+                          enable-profiles
+                        
+                        
+                          fp-auth
+                        
+                        id="devsite-user">
+            
+              
+              <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Sign in</span>
+            
+        </devsite-user>
+           
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+          <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+              
+                
+              
+              
+              <div class="devsite-product-description">
+                Join Google ad data with your own data while maintaining end-user privacy.
+
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        
+      
+      
+        <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+  <devsite-tabs class="lower-tabs">
+
+    <nav class="devsite-tabs-wrapper" aria-label="Lower tabs">
+      
+        
+          <tab  class="devsite-active">
+            
+    <a href="https://developers.google.com/ads-data-hub"
+      track-metadata-eventdetail="https://developers.google.com/ads-data-hub"
+    
+       class="devsite-tabs-content gc-analytics-event "
+       track-type="nav"
+       track-metadata-position="nav - home"
+       track-metadata-module="primary nav"
+       aria-label="Home, selected" 
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Home"
+         
+           track-name="home"
+         
+       >
+    Home
+  
+    </a>
+  
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/ads-data-hub/guides/intro"
+      track-metadata-eventdetail="https://developers.google.com/ads-data-hub/guides/intro"
+    
+       class="devsite-tabs-content gc-analytics-event "
+       track-type="nav"
+       track-metadata-position="nav - guides"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Guides"
+         
+           track-name="guides"
+         
+       >
+    Guides
+  
+    </a>
+  
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/ads-data-hub/reference/table-schemas/advertisers"
+      track-metadata-eventdetail="https://developers.google.com/ads-data-hub/reference/table-schemas/advertisers"
+    
+       class="devsite-tabs-content gc-analytics-event "
+       track-type="nav"
+       track-metadata-position="nav - reference"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Reference"
+         
+           track-name="reference"
+         
+       >
+    Reference
+  
+    </a>
+  
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/ads-data-hub/support/contact-support"
+      track-metadata-eventdetail="https://developers.google.com/ads-data-hub/support/contact-support"
+    
+       class="devsite-tabs-content gc-analytics-event "
+       track-type="nav"
+       track-metadata-position="nav - support"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Support"
+         
+           track-name="support"
+         
+       >
+    Support
+  
+    </a>
+  
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/ads-data-hub/resources/release-notes"
+      track-metadata-eventdetail="https://developers.google.com/ads-data-hub/resources/release-notes"
+    
+       class="devsite-tabs-content gc-analytics-event "
+       track-type="nav"
+       track-metadata-position="nav - resources"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Resources"
+         
+           track-name="resources"
+         
+       >
+    Resources
+  
+    </a>
+  
+  
+          </tab>
+        
+      
+        
+          <tab  >
+            
+    <a href="https://developers.google.com/ads-data-hub/guides/custom-bidding"
+      track-metadata-eventdetail="https://developers.google.com/ads-data-hub/guides/custom-bidding"
+    
+       class="devsite-tabs-content gc-analytics-event "
+       track-type="nav"
+       track-metadata-position="nav - custom bidding"
+       track-metadata-module="primary nav"
+       
+       
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Custom bidding"
+         
+           track-name="custom bidding"
+         
+       >
+    Custom bidding
+  
+    </a>
+  
+  
+          </tab>
+        
+      
+    </nav>
+
+  </devsite-tabs>
+
+          
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars hidden>
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="devsite-book-nav-filter"
+     hidden>
+  <span class="filter-list-icon material-icons" aria-hidden="true"></span>
+  <input type="text"
+         placeholder="Filter"
+         
+         aria-label="Type to filter"
+         role="searchbox">
+  
+  <span class="filter-clear-button hidden"
+        data-title="Clear filter"
+        aria-label="Clear filter"
+        role="button"
+        tabindex="0"></span>
+</div>
+
+<nav class="devsite-book-nav devsite-nav nocontent"
+     aria-label="Side menu">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+  <a href="https://developers.google.com/ads-data-hub">
+    
+  <div class="devsite-product-logo-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <picture>
+      
+      <img class="devsite-product-logo"
+           alt="Ads Data Hub"
+           src="https://www.gstatic.com/images/branding/product/1x/ads_data_hub_24dp.png"
+           srcset=" https://www.gstatic.com/images/branding/product/1x/ads_data_hub_24dp.png"
+           sizes="64px"
+           loading="lazy">
+    </picture>
+  
+  </div>
+  
+  </a>
+  
+
+  
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list"
+  >
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+  <a href="https://developers.google.com/ads-data-hub"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Upper Header"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail="Ads Data Hub"
+      
+    >
+    Ads Data Hub
+  </a>
+  
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/ads-data-hub"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              devsite-nav-active"
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Home"
+      
+        track-name="home"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Home"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Home
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/ads-data-hub/guides/intro"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Guides"
+      
+        track-name="guides"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/ads-data-hub/reference/table-schemas/advertisers"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Reference"
+      
+        track-name="reference"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/ads-data-hub/support/contact-support"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Support"
+      
+        track-name="support"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Support"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Support
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/ads-data-hub/resources/release-notes"
+    
+       class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Resources"
+      
+        track-name="resources"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Resources"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Resources
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+            
+<li class="devsite-nav-item">
+
+  
+  <a href="/ads-data-hub/guides/custom-bidding"
+    
+       class="devsite-nav-title gc-analytics-event
+              
+              "
+    
+
+    
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Tab: Custom bidding"
+      
+        track-name="custom bidding"
+      
+    
+     data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Custom bidding"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav">
+  
+    <span class="devsite-nav-text" tooltip >
+      Custom bidding
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+          
+          
+          
+        </ul>
+      
+    </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            
+              
+              
+            >
+          
+          
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article">
+  
+  
+  
+    <div class="devsite-banner devsite-banner-announcement nocontent"
+      
+        
+      >
+      <div class="devsite-banner-message">
+        <div class="devsite-banner-message-text">
+          We've updated our documentation with the latest features and updates introduced by Ads Data Hub's <a href="https://blog.google/products/marketingplatform/360/ads-data-hub-powered-solutions/"> two new experiences</a>. <b>Advertisers, agencies, and publishers</b>, refer to the <a href="https://developers.google.com/ads-data-hub/marketers">Marketers</a> site. <b>Vendors and partners</b>, refer to the <a href="https://developers.google.com/ads-data-hub/mp">Measurement Partners</a> site.
+
+        </div>
+      </div>
+    </div>
+  
+  
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list"
+  
+    aria-label="Breadcrumb">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://developers.google.com/"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="1"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="1"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Home
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/products"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="2"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="2"
+      
+        track-metadata-eventdetail=""
+      
+    >
+    
+        Products
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/ads"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="3"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="3"
+      
+        track-metadata-eventdetail="Google Advertising Platforms"
+      
+    >
+    
+        Ads
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://developers.google.com/ads-data-hub"
+      
+        class="devsite-breadcrumb-link gc-analytics-event"
+      
+        data-category="Site-Wide Custom Events"
+      
+        data-label="Breadcrumbs"
+      
+        data-value="4"
+      
+        track-type="globalNav"
+      
+        track-name="breadcrumb"
+      
+        track-metadata-position="4"
+      
+        track-metadata-eventdetail="Ads Data Hub"
+      
+    >
+    
+        Ads Data Hub
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+  </div>
+  
+    <devsite-feedback
+  position="header"
+  project-name="Ads Data Hub"
+  product-id="5156472"
+  bucket="Docs"
+  context=""
+  version="t-devsite-webserver-20240416-r00-rc00.459956506132479269"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+  class="nocontent"
+  
+  
+  
+    
+      project-icon="https://www.gstatic.com/images/branding/product/1x/ads_data_hub_24dp.png"
+    
+  
+  
+  feedback-type="thumb-rating">
+
+  <button>
+  
+    
+    Send feedback
+  
+  </button>
+</devsite-feedback>
+  <devsite-feature-tooltip
+          ack-key="AckCollectionsBookmarkTooltipDismiss"
+          analytics-category="Site-Wide Custom Events"
+          analytics-action-show="Callout Profile displayed"
+          analytics-action-close="Callout Profile dismissed"
+          analytics-label="Create Collection Callout"
+          class="devsite-page-bookmark-tooltip nocontent"
+          dismiss-button="true"
+          id="devsite-collections-dropdown"
+
+          
+          dismiss-button-text="Dismiss"
+
+          
+          close-button-text="Got it">
+
+        
+        <devsite-bookmark></devsite-bookmark>
+
+        <span slot="popout-heading">
+          
+          Stay organized with collections
+        </span>
+        <span slot="popout-contents">
+          
+          Save and categorize content based on your preferences.
+        </span>
+      </devsite-feature-tooltip>
+  
+
+  <devsite-toc class="devsite-nav"
+    depth="2"
+    devsite-toc-embedded
+    disabled>
+  </devsite-toc>
+  
+
+  
+
+
+
+
+
+
+<div class="devsite-article-body clearfix
+  devsite-no-page-title">
+
+  
+    
+  <section class="devsite-landing-row devsite-landing-row-2-up"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="ads-data-hub"
+        data-text="Ads Data Hub"
+        
+        tabindex="0">
+      
+    
+        Ads Data Hub
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            <p>Tailor your marketing measurement approach to your unique business needs. Ads Data Hub enables customized analysis that aligns with your specific business objectives, while respecting user privacy and upholding Google’s high standards of data security.</p>
+<p>With Ads Data Hub, you can upload your first-party data into BigQuery and join it with Google event-level ad campaign data. Combining your data with Google event data can unlock insights, improve advertising efficiency, help you achieve data-driven business goals, and yield more effective campaign optimization. Results from Ads Data Hub are aggregated over a group of users, which allows Google to provide more complete data and still maintain end-user privacy.</p>
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/intro"
+  
+    class="button button-primary
+      "
+    
+    
+    >View documentation</a>
+
+  
+  <a href="https://adsdatahub.google.com/"
+  
+    class="button button-secondary
+      "
+    
+    
+    >Go to interface</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-description"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <devsite-video
+  autohide="1"
+  showinfo="0"
+  video-id="o4XwkOZsEQM"
+  
+></devsite-video>
+  
+</div>
+
+
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-1-up"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="a-privacy-centric-data-warehouse"
+        data-text="A privacy-centric data warehouse"
+        
+        tabindex="0">
+      
+    
+        A privacy-centric data warehouse
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+<div class="devsite-landing-row-item-media
+            
+    devsite-landing-row-item-media-left
+  ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/privacy-checks">
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/ads-data-hub/images/reports.svg"
+         srcset="https://developers.google.com/static/ads-data-hub/images/reports.svg"
+         
+         
+         
+         sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+         loading="lazy"
+         >
+  </picture>
+  
+  </a>
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            <p>Ads Data Hub is built in a privacy-safe way, and its functionality differs significantly
+ from other data warehousing solutions. Even experts with experience using
+ other clean rooms and data warehousing solutions may need to learn how to operate
+ effectively in Ads Data Hub.</p>
+<p> Ads Data Hub protects user privacy in the following ways: <ul> <li>Underlying data cannot be inspected, as doing so would violate Ads Data Hub’s goal to
+ share data in aggregate to prevent the re-identification of end users.</li>
+<li>When privacy checks are triggered, rows can be filtered without warning.</li> <li>Some privacy checks compare against your historical results, and can be triggered if
+ your results don’t change adequately between jobs.</li>
+</ul> </p>
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/privacy-checks"
+  
+    class="button button-primary
+      "
+    
+    
+    >Privacy checks</a>
+
+  
+  <a href="https://developers.google.com/ads-data-hub/resources/policies"
+  
+    class="button button-secondary
+      "
+    
+    
+    >Policies</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-cta"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="sandbox-dataset"
+        data-text="Sandbox dataset"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/ads-data-hub/guides/sandbox">
+    
+        Sandbox dataset
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            In order to help users operate effectively amidst privacy checks in Ads Data Hub, the platform includes a synthetic dataset. This dataset isn’t subject to privacy checks, and as such should be used for experimentation and query development. The sandbox can improve your query development workflow by giving you a better understanding of the underlying data.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/sandbox"
+  
+    class="button button-primary
+      "
+    
+    
+    >Test queries</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-2-up devsite-landing-row-cards"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+      <header class="devsite-landing-row-header"
+              >
+
+        
+
+        
+        <div class="devsite-landing-row-header-text">
+
+          
+    <h2 id="features"
+        data-text="Features"
+        
+        tabindex="0">
+      
+    
+        Features
+      
+  
+    </h2>
+  
+
+          
+        </div>
+        
+
+        
+      </header>
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/privacy-checks">
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
+      lock
+    </div>
+  
+  </div>
+  
+  </a>
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="privacy-centric"
+        data-text="Privacy-centric"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/ads-data-hub/guides/privacy-checks">
+    
+        Privacy-centric
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Ads Data Hub makes it easy for you to protect and respect end-user privacy. In addition to robust privacy checks that help ensure the data from the platform is privacy-centric, Ads Data Hub lets you: <ul>
+  <li>Match your first-party data to Google-hosted data in a privacy-centric manner.</li>
+  <li>Grant Ads Data Hub users (within and outside of your organization) access to your data, while maintaining privacy controls and not requiring them to acquire your data.</li>
+  <li>Host your data on servers in:
+    <ul>
+      <li>Australia</li>
+      <li>Europe (excluding London and Zurich)</li>
+      <li>Japan</li>
+      <li>the United States</li>
+    </ul>
+</ul>
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/privacy-checks"
+  
+    class="button
+      "
+    
+    
+    >Learn more</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+  <a href="https://developers.google.com/ads-data-hub/reference/table-schemas/advertisers">
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
+      visibility
+    </div>
+  
+  </div>
+  
+  </a>
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="holistic-campaign-view"
+        data-text="Holistic campaign view"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/ads-data-hub/reference/table-schemas/advertisers">
+    
+        Holistic campaign view
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Ads Data Hub is the only access point for events based on Google IDs and mobile device IDs, including user ids from publishers for measurement which enable holistic campaign measurement and analysis. Note that user IDs from certain publishers are only made available for measurement and not for activation.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/reference/table-schemas/advertisers"
+  
+    class="button
+      "
+    
+    
+    >Learn more</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-3-up devsite-landing-row-cards"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/audience-activation">
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
+      people
+    </div>
+  
+  </div>
+  
+  </a>
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="audience-activation"
+        data-text="Audience activation"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/ads-data-hub/guides/audience-activation">
+    
+        Audience activation
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Build and manage audiences for use in other Google ads products using the analyses that you perform using Ads Data Hub.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/audience-activation"
+  
+    class="button
+      "
+    
+    
+    >Activate audiences</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/join-your-data">
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
+      link
+    </div>
+  
+  </div>
+  
+  </a>
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="first-party-data"
+        data-text="First-party data"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/ads-data-hub/guides/join-your-data">
+    
+        First-party data
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Ads Data Hub supports a variety of first-party data links. Using Ads Data Hub, you can connect mobile app data, offline transaction data, or data from a connected ID space.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/join-your-data"
+  
+    class="button
+      "
+    
+    
+    >Join data</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         
+    icon-position="left"
+  >
+
+      
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/query_viewability_metrics">
+    
+  <div class="devsite-landing-row-item-icon-container"
+       
+       
+       
+    size="medium"
+  >
+  
+    <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
+      picture_in_picture
+    </div>
+  
+  </div>
+  
+  </a>
+  
+
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="viewability"
+        data-text="Viewability"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/ads-data-hub/guides/query_viewability_metrics">
+    
+        Viewability
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            <b>Note:</b> Viewability measurement is only available to advertisers and agencies.<br> Ads Data Hub gives you access to Campaign Manager 360 and Display & Video 360 Active View metrics, in addition to advanced viewability measurement for YouTube.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/query_viewability_metrics"
+  
+    class="button
+      "
+    
+    
+    >Learn more</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+<div class="devsite-landing-row-item-media
+            ">
+  
+    <figure class="devsite-landing-row-item-image">
+  
+    
+  
+  <picture>
+    
+    <img alt=""
+         
+         src="https://developers.google.com/static/ads-data-hub/images/integrate.svg"
+         srcset="https://developers.google.com/static/ads-data-hub/images/integrate.svg"
+         
+         
+         
+         sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px"
+         loading="lazy"
+         >
+  </picture>
+  
+  
+</figure>
+  
+</div>
+
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="determine-if-ads-data-hub-will-work-for-your-advertising-needs"
+        data-text="Determine if Ads Data Hub will work for your advertising needs"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+    
+        Determine if Ads Data Hub will work for your advertising needs
+      
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Although Ads Data Hub is in a closed beta, you can learn more about whether it's right for you by: <ul> <li> Working with your Google account team to determine if Ads Data Hub can meet your objectives. </li> <li> Contacting your agency to understand the reporting and services offered via Ads Data Hub. </li> <li> Checking the list of <a href="/ads-data-hub/resources/adh-vendors">third-party vendors</a> to to see if your preferred vendor is integrated with Ads Data Hub. </li> </ul> </p>
+
+          </div>
+        
+
+        
+
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-cta"
+           
+           
+           
+    header-position="top"
+  >
+    <div class="devsite-landing-row-inner">
+
+    
+      
+
+      
+
+        <div class="devsite-landing-row-group">
+        
+          <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     
+     
+    description-position="bottom"
+  >
+
+  
+
+    
+
+    
+    <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+
+        
+    <h3 id="next-steps"
+        data-text="Next steps"
+        class="hide-from-toc no-link"
+        tabindex="0">
+      
+  <a href="https://developers.google.com/ads-data-hub/guides/quickstart-web-ui">
+    
+        Next steps
+      
+  </a>
+  
+    </h3>
+  
+
+        
+          <div class="devsite-landing-row-item-description-content">
+            Start your next project, explore how-tos, and manage your account.
+
+          </div>
+        
+
+        
+
+        
+          <div class="devsite-landing-row-item-buttons">
+  
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/quickstart-web-ui"
+  
+    class="button button-secondary
+      "
+    
+    
+    >Quickstart using the web UI</a>
+
+  
+  <a href="https://developers.google.com/ads-data-hub/guides/quickstart-api"
+  
+    class="button button-secondary
+      "
+    
+    
+    >Quickstart using the API</a>
+
+</div>
+        
+      </div>
+    </div>
+    
+  
+
+</div>
+        
+        </div>
+      
+
+    
+    </div>
+  </section>
+
+  
+
+  
+</div>
+
+  
+
+  
+
+  
+  
+</article>
+
+
+
+<devsite-notification
+>
+</devsite-notification>
+
+
+  
+<div class="devsite-content-data">
+  <template class="devsite-thumb-rating-down-categories">
+  [{
+      "type": "thumb-down",
+      "id": "missingTheInformationINeed",
+      "label":"Missing the information I need"
+    },{
+      "type": "thumb-down",
+      "id": "tooComplicatedTooManySteps",
+      "label":"Too complicated / too many steps"
+    },{
+      "type": "thumb-down",
+      "id": "outOfDate",
+      "label":"Out of date"
+    },{
+      "type": "thumb-down",
+      "id": "samplesCodeIssue",
+      "label":"Samples / code issue"
+    },{
+      "type": "thumb-down",
+      "id": "otherDown",
+      "label":"Other"
+    }]
+  </template>
+  <template class="devsite-thumb-rating-up-categories">
+  [{
+      "type": "thumb-up",
+      "id": "easyToUnderstand",
+      "label":"Easy to understand"
+    },{
+      "type": "thumb-up",
+      "id": "solvedMyProblem",
+      "label":"Solved my problem"
+    },{
+      "type": "thumb-up",
+      "id": "otherUp",
+      "label":"Other"
+    }]
+  </template>
+  
+    
+    
+    <template class="devsite-thumb-rating-feedback">
+      <devsite-feedback
+  position="thumb-rating"
+  project-name="Ads Data Hub"
+  product-id="5156472"
+  bucket="Docs"
+  context=""
+  version="t-devsite-webserver-20240416-r00-rc00.459956506132479269"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="thumb-rating"
+  class="nocontent"
+  
+  
+  
+    
+      project-icon="https://www.gstatic.com/images/branding/product/1x/ads_data_hub_24dp.png"
+    
+  
+  
+  feedback-type="thumb-rating">
+
+  <button>
+  
+    Need to tell us more?
+  
+  </button>
+</devsite-feedback>
+    </template>
+  
+</div>
+            
+          </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+          
+            
+          
+        </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+<nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+  <ul class="devsite-footer-linkboxes-list">
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Product Info</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="/ads-data-hub/resources/release-notes"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+              
+              
+            
+          
+            Release Notes
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Help</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://cloud.google.com/bigquery/docs/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            BigQuery Help
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://developers.google.com/doubleclick-advertisers/dtv2/overview"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Data Transfer Help
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="https://cloud.google.com/docs/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+              
+              
+            
+          
+            Google Cloud Help
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+    <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading no-link">Developer consoles</h3>
+      <ul class="devsite-footer-linkbox-list">
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 1)"
+            >
+            
+          
+            Google API Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 2)"
+            >
+            
+          
+            Google Cloud Platform Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 3)"
+            >
+            
+          
+            Google Play Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 4)"
+            >
+            
+          
+            Firebase Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 5)"
+            >
+            
+          
+            Actions on Google Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 6)"
+            >
+            
+          
+            Cast SDK Developer Console
+          
+          </a>
+          
+          
+        </li>
+        
+        <li class="devsite-footer-linkbox-item">
+          
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+            
+             data-label="Footer Link (index 7)"
+            >
+            
+              
+              
+            
+          
+            Chrome Web Store Dashboard
+          
+          </a>
+          
+          
+        </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+  
+</nav>
+          
+        </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+          
+            
+
+<div class="devsite-footer-utility nocontent">
+  
+  
+  <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <picture>
+        
+        <img class="devsite-footer-sites-logo"
+             src="https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers/images/lockup-google-for-developers.svg"
+             loading="lazy"
+             alt="Google Developers">
+      </picture>
+    </a>
+    <ul class="devsite-footer-sites-list">
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Android Link"
+         
+         >
+          Android
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Chrome Link"
+         
+         >
+          Chrome
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Firebase Link"
+         
+         >
+          Firebase
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer Google Cloud Platform Link"
+         
+         >
+          Google Cloud Platform
+        </a>
+      </li>
+      
+      <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Footer All products Link"
+         
+         >
+          All products
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+
+  
+  <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+    <ul class="devsite-footer-utility-list">
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 ">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control">
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="#"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Manage cookies link"
+         
+           aria-hidden="true"
+         >
+          Manage cookies
+        </a>
+        
+      </li>
+      
+      <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+        <span class="devsite-footer-utility-description">Sign up for the Google for Developers newsletter</span>
+        
+        
+        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/newsletter/subscribe"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+        
+      </li>
+      
+    </ul>
+    
+    
+<devsite-language-selector>
+  <ul role="presentation">
+    
+    
+    <li role="presentation">
+      <a role="menuitem" lang="en"
+        >English</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="de"
+        >Deutsch</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es"
+        >Español</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="es_419"
+        >Español – América Latina</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fr"
+        >Français</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="id"
+        >Indonesia</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="it"
+        >Italiano</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pl"
+        >Polski</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt"
+        >Português</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="pt_br"
+        >Português – Brasil</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="vi"
+        >Tiếng Việt</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="tr"
+        >Türkçe</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="cs"
+        >česky</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ru"
+        >Русский</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="he"
+        >עברית</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ar"
+        >العربيّة</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="fa"
+        >فارسی</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="hi"
+        >हिंदी</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="bn"
+        >বাংলা</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="th"
+        >ภาษาไทย</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_cn"
+        >中文 – 简体</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="zh_tw"
+        >中文 – 繁體</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ja"
+        >日本語</a>
+    </li>
+    
+    <li role="presentation">
+      <a role="menuitem" lang="ko"
+        >한국어</a>
+    </li>
+    
+  </ul>
+</devsite-language-selector>
+
+  </nav>
+</div>
+          
+        </devsite-footer-utility>
+        <devsite-panel></devsite-panel>
+        
+          <devsite-concierge
+  
+  
+    data-info-panel
+  
+  
+    data-ai-panel
+  
+  
+  
+  
+    data-api-explorer-panel
+  >
+</devsite-concierge>
+        
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar
+    
+    >
+</devsite-snackbar>
+    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics analytics-iframe enable-cb>
+      
+        <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension1&#34;: &#34;Signed out&#34;, &#34;dimension6&#34;: &#34;en&#34;, &#34;dimension5&#34;: &#34;en&#34;, &#34;dimension4&#34;: &#34;Ads Data Hub&#34;, &#34;dimension11&#34;: false, &#34;dimension3&#34;: false}, &#34;gaid&#34;: &#34;UA-24532603-1&#34;, &#34;metrics&#34;: {&#34;ratings_value&#34;: &#34;metric1&#34;, &#34;ratings_count&#34;: &#34;metric2&#34;}, &#34;purpose&#34;: 1}]</script>
+<script type="application/json" tag-management>{&#34;ga4&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}, {&#34;id&#34;: &#34;G-LLHLEY501D&#34;, &#34;purpose&#34;: 0}], &#34;ga4p&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;gtm&#34;: [], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;False&#34;, &#34;requested&#34;: &#34;en&#34;, &#34;served&#34;: &#34;en&#34;}, &#34;pageType&#34;: &#34;article&#34;, &#34;projectName&#34;: &#34;Ads Data Hub&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;developers&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+      
+    </devsite-analytics>
+    
+      <devsite-badger></devsite-badger>
+    
+    
+    <script nonce="3Q8VX2e2ZB7v3vpiq4JE797qIDs7f7">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba","https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v18deffdce717053d2574d396ca1a06d6589d5eab7eb54fc25710e3ed98d4a3ba/developers/images/favicon-new.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["EngEduTelemetry__enable_engedu_telemetry","Profiles__require_profile_eligibility_for_signin","Search__enable_suggestions_from_borg","Concierge__enable_concierge_restricted","Cloud__enable_cloud_facet_chat","Profiles__enable_developer_profiles_callout","Profiles__enable_profile_collections","TpcFeatures__enable_mirror_tenant_redirects","Search__enable_dynamic_content_confidential_banner","Search__enable_ai_search_summaries","CloudShell__cloud_shell_button","Search__enable_ai_search_summaries_restricted","MiscFeatureFlags__enable_variable_operator","Significatio__enable_by_tenant","MiscFeatureFlags__enable_explain_this_code","Cloud__enable_free_trial_server_call","Experiments__reqs_query_experiments","MiscFeatureFlags__developers_footer_dark_image","Search__enable_page_map","Cloud__enable_cloudx_experiment_ids","MiscFeatureFlags__enable_new_sitemap","MiscFeatureFlags__developers_footer_image","Search__enable_ai_eligibility_checks","MiscFeatureFlags__emergency_css","Profiles__enable_public_developer_profiles","Concierge__enable_concierge","Cloud__enable_cloud_shell_fte_user_flow","Search__enable_faceted_search","Profiles__enable_awarding_url","Cloud__enable_cloud_shell","BookNav__enable_tenant_cache_key","Profiles__enable_release_notes_notifications","MiscFeatureFlags__enable_project_variables","Cloud__enable_cloud_dlp_service","Profiles__enable_page_saving","CloudShell__cloud_code_overflow_menu","Cloud__enable_cloudx_ping","MiscFeatureFlags__enable_firebase_utm","Analytics__enable_cookie_bar","Concierge__enable_pushui"],null,null,"AIzaSyBLEMok-5suZ67qRPzx0qUtbnLmyT_kCVE","https://developerscontentserving-pa.clients6.google.com","AIzaSyCM4QpTRSqP5qI4Dvjt4OAScIN8sOUlO-k","https://developerscontentsearch-pa.clients6.google.com",1,4]')
+  
+</script>
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>
