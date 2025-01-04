@@ -8,14 +8,21 @@
 - Framework Design and Implementation: We introduce a novel framework for integrating HTTP/2 over MPQUIC, tackling key challenges in stream scheduling and protocol compatibility. Within this framework, we implement four stream schedulers: Round Robin (RR), Weighted Round Robin (WRR), Scattered Weighted Round Robin (sWRR), and a newly proposed data size-based WRR (dWRR). 
 - Experimental Evaluation: We thoroughly evaluate these schedulers using our framework in Mininet-WiFi. 
 
-## Running
-- Build: 
+## Automative test
+- Run simulationForDSS/wifi_test_script.sh
+
+## Manual setup
+
+- Build MPQUIC client and server: 
 ```go build . ```
 ```go install ./...```
 
-- Khởi tạo lại môi trường mạng
+- If Mininet crashes for some reason, clean it up:
     > sudo mn -c
-- Run:
-    > sudo bash script.sh 
 
 ## Output
+- simulationForDSS/output/...client.logs : Client logs
+- simulationForDSS/output/...result.csv : Download time 
+- simulationForDSS/output/...server.logs : Server logs
+- simulationForDSS/output/...time.csv : Object completion time
+- simulationForDSS/output/...byte.csv : Object completion by byte
