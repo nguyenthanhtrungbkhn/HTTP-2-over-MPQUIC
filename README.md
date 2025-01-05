@@ -1,7 +1,9 @@
 # A framework for HTTP/2 over MPQUIC: Design and Implementation
 ## Requirements
+- Ubuntu (Tested with: Ubuntu 22.04)
 - go version go1.20 linux/amd64
 - python 3.10
+- R project, matplotlib
 - Mininet-WiFi (https://mininet-wifi.github.io)
 
 ## Contributions
@@ -26,3 +28,6 @@
 - simulationForDSS/output/...server.logs : Server logs
 - simulationForDSS/output/...time.csv : Object completion time
 - simulationForDSS/output/...byte.csv : Object completion by byte
+
+## Statistics
+- simulationForDSS/statistics
