@@ -3,11 +3,11 @@
 #!/bin/sh
 
 sudo mn -c
-cd /home/"$(whoami)"/go/src/github.com/lucas-clemente/quic-go ; go build ; go install ./...
-cd /home/"$(whoami)"/go/src/github.com/lucas-clemente/simulationForDSS
-pwd
-cp /home/"$(whoami)"/go/bin/example ./serverMPQUIC
-cp /home/"$(whoami)"/go/bin/client_benchmarker ./clientMPQUIC
+# cd /home/"$(whoami)"/go/src/github.com/lucas-clemente/quic-go ; go build ; go install ./...
+# cd /home/"$(whoami)"/go/src/github.com/lucas-clemente/simulationForDSS
+# pwd
+# cp /home/"$(whoami)"/go/bin/example ./serverMPQUIC
+# cp /home/"$(whoami)"/go/bin/client_benchmarker ./clientMPQUIC
 
 sudo rm ./logs/*
 # sudo rm ./output/result-wireless/*
@@ -36,12 +36,12 @@ declare -a bgrArr=("0") #background traffic
 declare -a frqArr=("0") #frq
 declare -a bwdArr=("0") #bandwidth
 declare -a owdArr=("0") #one-way delay
-declare -a varArr=("0") #variation delay
-declare -a losArr=("0") #pkt loss 
-declare -a brsArr=("safari" "chrome")
+declare -a varArr=("16") #variation delay
+declare -a losArr=("3") #pkt loss 
+declare -a brsArr=("firefox" "safari" "chrome")
 
-declare -a schArr=("LowLatency")
-declare -a stmArr=("RR" "WRR" "SWRR" "NII")
+declare -a schArr=("SAECF")
+declare -a stmArr=("WRR")
 for mdl in "${mdlArr[@]}"
 do 
     for num in "${numArr[@]}"
@@ -68,11 +68,11 @@ do
                                             do 
                                                 echo "$mdl-$num-$fil-$bgr-$frq-$bwd-$owd-$var-$los-$sch-$stm-$brs"
                                                 sudo python wifi_scenario.py --model ${mdl} --client ${num} --website ${fil} --background ${bgr} --frequency ${frq} --bandwidth ${bwd} --delay ${owd} --variation ${var} --loss ${los} --scheduler ${sch} --stream ${stm} --model ${mdl} --browser ${brs}
-                                                sudo mv ./logs/server.logs ./output/result/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-server.logs
-                                                sudo mv ./logs/client.logs ./output/result/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-client.logs
-                                                sudo mv ./logs/data-time.csv ./output/result/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-time.csv   
-                                                sudo mv ./logs/data-byte.csv ./output/result/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-byte.csv   
-                                                sudo mv ./logs/result.csv ./output/result/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-result.csv   
+                                                sudo mv ./logs/server.logs ./output/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-server.logs
+                                                sudo mv ./logs/client.logs ./output/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-client.logs
+                                                sudo mv ./logs/data-time.csv ./output/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-time.csv   
+                                                sudo mv ./logs/data-byte.csv ./output/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-byte.csv   
+                                                sudo mv ./logs/result.csv ./output/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-result.csv   
                                                 # sudo mv ./logs/server-flask.logs ./output/result-wireless/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-flask.logs  
                                                 # sudo mv ./logs/training_history.png ./output/result-wireless/${mdl}-${num}-${fil}-${bgr}-${frq}-${bwd}-${owd}-${var}-${los}-${sch}-${stm}-${brs}-training.png 
                                                 sudo mn -c
